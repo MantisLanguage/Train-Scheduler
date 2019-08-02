@@ -37,7 +37,7 @@ $(document).ready(function(){
     });
 
     database.ref().on("child_added", function(childSnapshot) {
-        // var nextArr;
+       
         var minAway;
         // subtract year to make it current 
         var firstTrainNew = moment(childSnapshot.val().firstTrain, "hh:mm").subtract(1, "years");
